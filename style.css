@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Cabin&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&family=Inconsolata:wght@600&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@1&family=Mukta:wght@500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@1,400;1,500&family=Source+Code+Pro:ital@1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --primary-color: hsl(180, 20%, 99%);
+  --second-color: hsl(240, 7%, 97%);
+  --Accent-color: hsl(196, 99%, 33%);
+  --card-bg-color: hsl(243, 75%, 95%);
+  --button-bg-color: hsl(245, 34%, 39%);
+  --border-color: hsl(200, 100%, 98%);
+  --font-color: hsl(0, 0%, 100%);
+
+  /* --Heading: "Protest Riot", sans-serif; */
+  --MainHeading: "Poppins", sans-serif;
+  --SubHeading: "Roboto", sans-serif;
+  --para: "Source Code Pro", monospace;
+
+  --MainHeading-size: 45px;
+  --SubHeading-size: 23px;
+  --para-size: 20px;
+}
+
+body {
+  font-family: var(--MainHeading)!important;
+}
+.navbar {
+  background-color: var(--primary-color);
+  font-family: var(--MainHeading)!important;
+}
+.navbar-brand {
+  font-family: var(--MainHeading);
+}
+.navbar-nav li a {
+  font-family: var(--SubHeading);
+  font-size: 17px;
+  /* padding: 8px; */
+  color: rgb(126, 124, 124);
+  font-weight: 430;
+}
+.dropdown-menu{
+  /* padding: 40px!important; */
+}
+.dropdown-item:hover{
+ color: rgb(126, 124, 124);
+}
+.dropdown-item h6{
+  color: rgb(10, 10, 10)!important;
+}
+.dropdown-item i:hover{
+  color: rgb(51, 21, 224)!important;
+  margin-left: 5px;
+}
+.dropdown-item p{
+  font-size: 16px;
+  font-weight: 400!important;
+  color: rgb(48, 47, 47);
+ margin-top: -5px;
+}
+.HeroContainer {
+  background-color: var(--second-color);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(25, 111, 241, 0.137);
+  border: 1px solid var(--border-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.HeroContent {
+  margin-top: 75px;
+  margin-left:35px;
+}
+.HeroContentSubHeading {
+  font-family: var(--MainHeading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.HeroContent h1 {
+  font-family: var(--MainHeading);
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 45px;
+  font-size: 30px;
+}
+.HeroContent span {
+  color: var(--Accent-color);
+}
+
+.HeroContent p {
+  font-size:16px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  /* font-weight: 400; */
+}
+.HeroImg {
+  width: 72%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 50px;
+}
+.HeroImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.CardSection .container .row {
+  margin-top: 50px;
+}
+.CardContainer {
+  background-color: var(--second-color);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.CardHeading {
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  color: var(--Accent-color);
+  font-weight: 600;
+}
+.CardView p {
+  padding-top: 20px;
+  font-size: medium;
+}
+
+.StudentRoles .container .row {
+  margin-top: 50px;
+}
+.StudentRolescontainer {
+  margin-top: 150px;
+}
+.StudentRolescontainer .StudentRolesHeading {
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  font-weight: 600;
+}
+.StudentRolescontainer .StudentRolesSubHeading {
+  margin-top: 10px;
+  font-size: small;
+}
+.StudentRolesTable {
+  border-radius: 10px;
+  border: 2px solid #ebf2ff;
+  padding: 1rem 2rem;
+}
+.StudentRolesContent {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.StudentRolesIcons {
+  width: 50px;
+  height: 30px;
+  align-items: center;
+}
+.StudentRolesIcons img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.StudentSubHeading {
+  margin-left: 20px;
+  font-family: var(--SubHeading);
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 3px;
+}
+.StudentRolespara {
+  margin-left: 20px;
+  font-family: var(--SubHeading);
+  font-size: 12px;
+}
+hr {
+  border: 1px solid #dcdbdb;
+}
+
+/* StudentLearn */
+.StudentLearnContainer {
+  background-color: var(--second-color);
+  margin-top: 50px;
+}
+
+.StudentFirst {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+.StudentLearncontant .StudentLearnMainHeading {
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  font-weight: 600;
+  padding-top: 30px;
+}
+.StudentLearncontant .StudentLearnSubHeading {
+  font-size: smaller;
+  margin-top: 10px;
+}
+.Student-Learn {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 1rem;
+}
+.StudentLearnTableFirst {
+  transform: translateY(-20px);
+}
+.StudentLearnTableTwo {
+  transform: translateY(20px);
+}
+.StudentLearnContent {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+  /* gap: 5px; */
+}
+.StudentLearnIcons {
+  width: 30px;
+  height: 20%;
+  align-items: center;
+}
+.StudentLearnIcons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.StudentMainHeading {
+  font-family: var(--SubHeading);
+  font-weight: 600;
+  margin-top: 10px;
+}
+.StudentLearnContent p {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+/* Experiences */
+.ExperiencesContainer {
+  margin-top: 50px;
+}
+.ExperiencesMainHeading {
+  font-family: var(--SubHeading);
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  font-weight: 800;
+  padding-top: 30px;
+}
+.ExperiencesCardContainer {
+  width: 90%;
+  height: 80%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.ExperiencesCardContainer:hover {
+  box-shadow: 0px 5px 10px rgba(25, 111, 241, 0.137);
+}
+.ExperiencesCardimg {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ExperiencesCardimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ExperiencesCardHeading {
+  font-family: var(--SubHeading);
+  font-size: larger;
+  font-weight: 800;
+}
+.ExperiencesCardContainer p {
+  font-size: 12px;
+}
+
+/* how it operates */
+
+.students-details {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  font-family: "poppins", sans-serif !important;
+}
+.header {
+  font-family: var(--SubHeading);
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  font-weight: 800;
+  /* padding-top: 30px; */
+}
+.line-cover {
+  position: relative;
+}
+.student-num {
+  width: 30px;
+  height: 30px;
+  background-color: #003ace;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.student-subhead {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.student-para {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.border-line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 75%;
+  left: -80%;
+  height: 1px;
+  background-color: #003ace;
+}
+
+/* Roles and Responsibilities  */
+.header-2 {
+  font-family: var(--SubHeading);
+  font-family: var(--SubHeading);
+  font-size: var(--SubHeading-size);
+  font-weight: 800;
+}
+
+.join:hover {
+  color: white !important;
+}
+
+/* footer */
+.FooterSection {
+  margin-top: 50px;
+}
+.FooterHr {
+  border: 1px blue solid;
+}
+
+.CompanyLogo {
+  width: 20%;
+}
+.CompanyLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.FooterContainer p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.FooterIcons i {
+  margin-left: 10px;
+}
+.FooterContent ul li a{
+ text-decoration: none;
+ color: rgb(48, 47, 47);
+}
+.FooterSubHeading {
+  font-family: var(--SubHeading);
+  font-weight: 500;
+  font-size: larger;
+}
+.FooterContent ul li {
+  list-style-type: none;
+  font-size: 12px;
+  padding-top: 10px;
+}
+form {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+form input {
+  width: 100%;
+  height: 100%;
+  font-family: var(--SubHeading);
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 90%);
+  padding-inline-start: 10px;
+}
+.EmailIcons {
+  background-color: hsl(220, 46%, 48%);
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+.EmailIcons i {
+  color: white;
+}
+
+@media screen and (max-width: 776px) {
+  .HeroContainer {
+    height: auto;
+    padding-block-end: 20px;
+  }
+  .HeroContent {
+    margin-top: 20px;
+  }
+  .HeroImg {
+    width: auto;
+    height: auto;
+  }
+  .StudentRolescontainer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .StudentRolesTable {
+    margin-top: 30px;
+  }
+  .StudentLearncontant {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .Student-Learn {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .HeroContainer {
+    height: auto;
+  }
+  .FooterContent ul {
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  .ExperiencesCardContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .HeroContainer {
+    height: auto;
+  }
+  .students-details {
+    grid-template-columns: 1fr;
+  }
+  .prog-line {
+    display: none;
+  }
+  .RolesContainer p {
+    margin-top: 10px;
+  }
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
